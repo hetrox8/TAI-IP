@@ -1,19 +1,28 @@
-*{
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
 body {
-   background: linear-gradient(to left, rgb(219, 127, 127) 0%, rgb(62, 189, 163) 100%);
-  text-transform:capitalize;
-  height: h00vh;
+  font-family: 'Nunito', sans-serif; 
+  background: linear-gradient(to left, rgb(219, 127, 127) 0%, rgb(62, 189, 163) 100%);
+  text-transform: capitalize;
+  height: 100vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 0;
   margin: 0;
 }
 
 .weather-container {
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #f4f7fb82;
+  font-weight: 400;
+  color: #000;
   max-width: 600px;
   margin: 50px auto;
   text-align: center;
@@ -31,7 +40,8 @@ input[type="text"] {
   border: 1px solid #ccc;
 }
 
-input ,::placeholder {
+input,
+::placeholder {
   text-align: center;
   font-size: 16px;
   text-transform: capitalize;
@@ -45,8 +55,51 @@ button {
   border-radius: 5px;
   cursor: pointer;
 }
+
 button:hover {
   background-color: #cf4a6b;
 }
 
+.info p {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  margin: 50px auto;
+}
 
+.info {
+  max-width: 800px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.album {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.top-row,
+.bottom-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.album-item {
+  flex-basis: 30%; /* Adjust the width of each item */
+}
+
+.album-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+span {
+  color: rgb(155, 8, 168);
+  font: 700px;
+}
+.info > p {
+  font-size: 19px;
+  font-weight: 400;
+}
