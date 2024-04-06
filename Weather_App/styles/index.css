@@ -2,18 +2,13 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  
 }
 
 body {
-  /* background-image: url('https://images.pexels.com/photos/1004665/pexels-photo-1004665.jpeg?auto=compress&cs=tinysrgb&w=600');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
-  text-transform: capitalize;
+   background: linear-gradient(to left, rgb(219, 127, 127) 0%, rgb(62, 189, 163) 100%);
+  text-transform:capitalize;
   height: h00vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f0f0f0;
   padding: 0;
   margin: 0;
 }
@@ -29,7 +24,7 @@ h1 {
 }
 
 input[type="text"] {
-  width: 100%;
+  width: 62%;
   padding: 10px;
   margin: 10px 0;
   border-radius: 5px;
@@ -51,13 +46,7 @@ button {
   cursor: pointer;
 }
 button:hover {
-  background-color: #62dad4;
+  background-color: #cf4a6b;
 }
 
-.weather-info {
-  margin-top: 20px;
-  padding: 20px;
-  border-radius: 5px;
-  background-color: #333;
-  color: #fff;
-}
+
