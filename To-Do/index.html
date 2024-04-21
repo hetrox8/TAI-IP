@@ -4,23 +4,40 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>To-Do List</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
 <div class="container">
     <h1>To-Do List</h1>
-    <input type="text" id="taskInput" placeholder="Add new task...">
-    <button id="addTask">Add Task</button>
-    <ul id="taskList"></ul> 
+    <div class="input-container">
+        <input type="text" id="taskInput" placeholder="Add new task...">
+        <button id="addTask">Add Task</button>
+    </div>
+    <div class="controls">
+        <label for="sortSelect">Sort by:</label>
+        <select id="sortSelect">
+            <option value="default">Default</option>
+            <option value="alphabetical">Alphabetical</option>
+            <!-- Add options for due date and priority if needed -->
+        </select>
+        <label for="filterSelect">Filter by:</label>
+        <select id="filterSelect">
+            <option value="all">All Tasks</option>
+            <option value="completed">Completed Tasks</option>
+            <option value="pending">Pending Tasks</option>
+            <!-- Add options for due date and priority if needed -->
+        </select>
+        <button id="clearTasks">Clear All Tasks</button>
+    </div>
+    <ul id="taskList"></ul>
 </div>
-<select id="filterSelect">
-  <option value="all">All Tasks</option>
-  <option value="completed">Completed Tasks</option>
-  <option value="pending">Pending Tasks</option>
-</select>
 
 <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.0.0/canvas-confetti.min.js"></script>
 
 </body>
 </html>
